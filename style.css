@@ -413,6 +413,14 @@ section {
     opacity: 0;
 }
 
+.project-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 60px;
+    align-items: center;
+}
 
 
 
@@ -420,13 +428,13 @@ section {
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 75; 
+        stroke-dashoffset: 125; 
     }
 }
 
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 75;
     }
 }
 
