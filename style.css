@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ body {
     font-weight: 600;
     opacity: 0;
     cursor: default;
-    animation: slideRight 1s ease forwards; 
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
@@ -43,9 +43,9 @@ body {
     margin-left: 36px;
     transition: .3s;
     opacity: 0;
-    animation: slideTop 1s ease forwards; 
-    animation-delay: 1s calc(0.2s * var(--i)); 
-    transition: 0.5s ease; 
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s calc(0.2s * var(--i));
+    transition: 0.5s ease;
 
 }
 
@@ -74,25 +74,28 @@ body {
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    animation: slideBottom 1s ease forwards; 
-    animation-delay: 0.5s; 
-}
-
-.home-content h3:nth-of-type(2){
-    margin-bottom: 30px;
-    animation: slideTop 1s ease forwards; 
+    animation: slideBottom 1s ease forwards;
     animation-delay: 0.5s;
 }
-.home-content h3 span{
-    color:#0ef;
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.5s;
 }
+
+.home-content h3 span {
+    color: #0ef;
+}
+
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
-    margin: -3px 0; 
-    animation: slideRight 1s ease forwards; 
+    margin: -3px 0;
+    animation: slideRight 1s ease forwards;
     animation-delay: 0.5s;
 }
+
 .home-content p {
     font-size: 20px;
     animation: slideLeft 1s ease forwards;
@@ -112,9 +115,9 @@ body {
     font-size: 20px;
     color: #0ef;
     margin: 10px 15px 30px 0;
-    animation: slideLeft 1s ease forwards; 
-    animation-delay: 1s calc(0.2s * var(--i)); 
-    transition: 0.5s ease; 
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s calc(0.2s * var(--i));
+    transition: 0.5s ease;
 }
 
 .social-link a:hover {
@@ -148,96 +151,357 @@ body {
         0 0 200px #0ef;
 }
 
-.about{
+.about {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
     margin-top: 4rem;
 }
-.about-img img{
+
+.about-img img {
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
     width: 100%;
     border-radius: 8px;
 }
-.about-text h2{
+
+.about-text h2 {
     font-size: 60px;
 }
-.about-text h2 span{
+
+.about-text h2 span {
     color: #0ef;
 }
-.about-text h4{
+
+.about-text h4 {
     font-size: 30px;
     font-weight: 600;
     color: #fff;
     line-height: 1.7;
-    margin:15px 0px;
+    margin: 15px 0px;
 }
-.about-text p{
-    color:aliceblue;
+
+.about-text p {
+    color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin: 2rem;
     text-align: justify;
 }
 
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-one {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-container {
+    width: 500px;
+    height: 500px;
+    padding: 40px 60px;
+    margin-left: 40px;
+}
+
+.heading-one {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.technical-container .bar {
+    margin-top: 40px 0;
+}
+
+.technical-container.bar:first-child,
+.technical-container.bar:last-child {
+    margin-top: 0;
+}
+
+.info {
+    margin-bottom: 2px;
+}
+
+.info span {
+    font-size: 18px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 70%;
+}
+
+.progress-line.javascript span {
+    width: 60%;
+}
+
+.progress-line.react span {
+    width: 60%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards; 
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content:"90%";
+}
+
+.progress-line.css span::after {
+    content:"70%";
+}
+
+.progress-line.javascript span::after {
+    content:"60%";
+}
+
+.progress-line.react span::after {
+    content:"60%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards; 
+    opacity: 0;
+}
+
+.pro{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.redial-bar{
+    width: 50%;
+    height: 170px;
+    margin-top: 10px;
+    position: relative;
+}
+.redial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.progress-bar {
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill:transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 {
+    animation: animate-path1 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path2 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path3 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path4 1s linear forwards;
+}
+
+.percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.skill-text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-weight: 500;
+    font-size: 17px;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 
 
 
 
 
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 75; 
+    }
+}
 
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
 
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 175; 
+    }
+}
 
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 50; 
+    }
+}
 
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
 
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
 
-
-
-
-
-
-
-
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
 
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideLeft {
     0% {
         transform: translateX(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideBottom {
     0% {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
