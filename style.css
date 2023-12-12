@@ -511,19 +511,15 @@ section {
 
 .container.main {
     width: 100%;
-    padding: 35px 10%;
+  
 }
 
-.container {
-    padding-right: calc(10%-30px);
-}
 
 .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 35px 10%;
-    padding-right: calc(10%-30px);
-    gap: 20px;
+    padding-right: calc(10%-2rem);
+    gap: 1.4rem;
 }
 
 .education-title {
@@ -534,7 +530,7 @@ section {
 
 .edu-content {
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 2rem;
     border-left: 2px solid #bababa;
 }
 
@@ -691,42 +687,6 @@ footer{
 
 
 
-@media only screen and (min-width: 769px) and (max-width: 1020px) {
-    /* For screen sizes between 769px and 1020px */
-
-    .container {
-        padding-right: 10%;
-    }
-
-    .navbar {
-        flex-direction: row;
-    }
-
-    .navbar a {
-        margin: 0 36px;
-    }
-
-    .about {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .container-one {
-        flex-direction: row;
-    }
-
-    .skill-container {
-        width: 50%;
-        margin-left: 40px;
-    }
-
-    .project-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .education-title {
-        padding: 0 0 0 30px;
-    }
-}
 
 @media screen and (max-width: 320px) {
     .header {
@@ -741,7 +701,7 @@ footer{
 
     .home {
         max-width: 100%;
-        margin-top: 160px;
+        margin-top: 200px;
         margin-bottom: 180px;
     }
 
