@@ -14,15 +14,16 @@
     <header class="header">
         <a href="" class="logo">Portfolio.</a>
         <nav class="navbar">
-            <a href="" style="--i:1" class="active">Home</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
-            <a href="" style="--i:3">Protfolio</a>
+            <a href="#project" style="--i:3">Protfolio</a>
             <a href="#skill" style="--i:4">Skill</a>
-            <a href="" style="--i:5">contact</a>
+            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#education" style="--i:5">Education</a>
         </nav>
     </header>
     <section class="home">
-        <div class="home-content">
+        <div class="home-content" id="home">
             <h3>Hello it`s me</h3>
             <h1>Fahim islam</h1>
             <h3> And I`m a <span class="text"> </span></h3>
@@ -67,11 +68,11 @@
         </div>
     </section>
 
+   
     <h1 class="sub-title" id="skill">My <span>Skill</span></h1>
-
     <section>
         <div class="container-one">
-            <div class="skill-container" id="skill">
+            <div class="skill-container">
                 <h1 class="heading-one">Technical Skill</h1>
                 <div class="technical-container">
                     <div class="bar"><i style="color: #c95d2c;" class="fa-brands fa-html5"></i>
@@ -207,7 +208,7 @@
     </section>
     <h1 class="sub-title" id="project">Education <span>Experience</span></h1>
     <section class="container">
-        <div class="main">
+        <div class="main" id="education">
             <div class="education">
                 <div class="education-title">
                     <h1>Education</h1>
@@ -252,7 +253,9 @@
         </div>
     </section>
 
-
+<footer >
+    <h3 class="footer-text">Developed by Fahim Islam @ all rights reserved </h3>
+</footer>
 
     <script src="./main.js"></script>
 </body>
